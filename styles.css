@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Incompleeta';
+    src: url('fonts/IncompleetaRegular.woff2') format('woff2'),
+         url('fonts/IncompleetaRegular.woff') format('woff'),
+         url('fonts/IncompleetaRegular.eot') format('eot'),
+         url('fonts/IncompleetaRegular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --black: #161616;
+    --white: #FFFEFE;
+    --yellow: #FFC759;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--white);
+}
+
+header {
+    color: var(--black);
+    font-weight: bold;
+    font-size: large;
+    padding: 0.2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    display: inline;
+    font-family: 'Incompleeta', cursive;
+    margin: 0 0 0 0.5em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5em 3em 0 0;
+    display: flex;
+    gap: 1em;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: var(--black);
+    text-decoration: none;
+    position: relative;
+}
+
+header nav ul li a span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+header nav ul li a span:hover {
+    transform: scale(1.2);
+}
+
+section {
+    padding: 2em;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    bottom: 0;
+    background: var(--black);
+    color: var(--white);
+    padding: 0.1em;
+}
+
+footer p {
+    text-align: center;
+}
+
+.welcome {
+
+}
+
+.projects {
+
+}
+
+.about {
+    background: var(--black);
+    color: var(--white);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.project {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(22, 22, 22, 0.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(22, 22, 22, 0.5);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 8px;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+.project-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.project-info a {
+    display: inline-block;
+    background-color: var(--yellow);
+    color: var(--black);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 16px;
+    margin-top: 10px;
+}
