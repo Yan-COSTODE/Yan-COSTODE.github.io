@@ -67,7 +67,7 @@ header nav ul li a span:hover {
 }
 
 section {
-    padding: 2em;
+    padding: 1em;
 }
 
 h2 {
@@ -90,16 +90,41 @@ footer p {
 }
 
 .welcome {
+    padding: 0 10em 0 10em;
+}
 
+.welcome p {
+    font-size: large;
+}
+
+.welcome ul {
+    margin: 0 3em 0 0;
+    list-style: none;
+    text-align: center;
+}
+
+.welcome ul li {
+    display: inline;
+    margin: 0 5em;
+}
+
+.welcome ul li img {
+    width: 64px;
+    height: 64px;
+    position: relative;
 }
 
 .projects {
-
 }
 
 .about {
+    padding: 0.1em 10em 0.1em 10em;
     background: var(--black);
     color: var(--white);
+}
+
+.about p {
+    font-size: large;
 }
 
 .project-grid {
