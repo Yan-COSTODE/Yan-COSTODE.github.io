@@ -1,11 +1,19 @@
 .welcome p {
-    width: 30rem;
+    width: 20rem;
 }
 
 .image {
     max-width: 100%;
 }
 
+.welcome ul li img {
+    margin-bottom: 1rem;
+}
+
+.projects {
+    background: linear-gradient(to bottom, var(--light-gray) 50%, var(--dark-gray) 50%);
+}
+
 .about p {
-    width: 30rem;
+    width: 20rem;
 }
