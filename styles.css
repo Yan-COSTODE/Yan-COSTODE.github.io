@@ -37,6 +37,8 @@ header h1 {
     display: inline;
     font-family: 'Incompleeta', cursive;
     margin: 0 0 0 0.5em;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
 }
 
 header nav ul {
@@ -51,6 +53,8 @@ header nav ul {
 header nav ul li {
     display: inline;
     margin: 0 1em;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.3rem;
 }
 
 header nav ul li a {
@@ -74,6 +78,7 @@ section {
 
 h2 {
     text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 p {
@@ -129,6 +134,7 @@ p {
 }
 
 .text-container {
+    font-family: 'Barlow Condensed', sans-serif;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -239,9 +245,14 @@ p {
     align-items: center;
 }
 
+.about h2 {
+    font-size: 3rem;
+}
+
 .about p {
     width: 50rem;
-    font-size: 1.2em;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
 }
 
 footer {
