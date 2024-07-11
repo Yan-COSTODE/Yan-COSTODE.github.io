@@ -12,6 +12,8 @@
     --black: #161616;
     --white: #FFFEFE;
     --yellow: #FFC759;
+    --light-gray: #F2F3F2;
+    --dark-gray: #EAEBEB;
 }
 
 body {
@@ -78,23 +80,17 @@ p {
     text-align: justify;
 }
 
-footer {
-    bottom: 0;
-    background: var(--black);
-    color: var(--white);
-    padding: 0.1em;
-}
-
-footer p {
-    text-align: center;
-}
-
 .welcome {
-    padding: 0 10em 0 10em;
+    padding: 0 0 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .welcome p {
-    font-size: large;
+    width: 50rem;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
 }
 
 .welcome ul {
@@ -109,22 +105,62 @@ footer p {
 }
 
 .welcome ul li img {
-    width: 64px;
-    height: 64px;
+    width: 96px;
+    height: 96px;
     position: relative;
 }
 
-.projects {
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
-.about {
-    padding: 0.1em 10em 0.1em 10em;
-    background: var(--black);
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1em 1em 1em;
+    margin: 0 1rem;
+}
+
+.text-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: var(--white);
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0 4px 8px rgba(22, 22, 22, 0.1);
+    text-align: center;
 }
 
-.about p {
-    font-size: large;
+.image {
+    aspect-ratio: 1/1;
+    flex: 1;
+    max-width: 33.33%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(22, 22, 22, 0.1);
+}
+
+.image-container .image:not(:last-child) {
+    margin-right: 2em;
+}
+
+.projects {
+    padding: 1em 0 0 0;
+    margin-top: 1em;
+    background: linear-gradient(to bottom, var(--light-gray) 70%, var(--dark-gray) 30%);
+}
+
+.projects h2 {
+    font-size: 3rem;
 }
 
 .project-grid {
@@ -191,4 +227,30 @@ footer p {
     padding: 8px 16px;
     border-radius: 16px;
     margin-top: 10px;
+}
+
+
+.about {
+    padding: 0.1em;
+    background: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about p {
+    width: 50rem;
+    font-size: 1.2em;
+}
+
+footer {
+    bottom: 0;
+    background: var(--black);
+    color: var(--white);
+    padding: 0.1em;
+}
+
+footer p {
+    text-align: center;
 }

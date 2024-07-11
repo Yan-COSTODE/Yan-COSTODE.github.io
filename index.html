@@ -6,6 +6,7 @@
         <title>Yan Costode</title>
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="mobile.css" media="only screen and (max-width: 768px)">
     </head>
     <body>
         <header>
@@ -24,19 +25,29 @@
 
         <section id="home" class="welcome">
             <br>
-            <h2>Welcome to My Portfolio</h2>
+
+            <div class="container">
+                <div class="image-container">
+                    <img src="assets/1.jpg" alt="Left Image" class="image">
+                    <img src="assets/2.jpg" alt="Center Image" class="image">
+                    <img src="assets/3.jpg" alt="Right Image" class="image">
+                </div>
+                <div class="text-container">Yan Costode</div>
+            </div>
+
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin eros ut accumsan scelerisque. Integer semper metus at nisl dignissim accumsan. Praesent elementum, sem in iaculis placerat, libero leo semper arcu, sit amet placerat tortor augue sit amet nulla. Etiam efficitur tortor quis efficitur tincidunt. Vestibulum auctor malesuada ex vitae auctor. Nulla facilisi. Maecenas congue enim ut ipsum pretium, et volutpat sapien posuere.</p>
             <br>
+
             <ul>
                 <li><img src="assets/unity.png" alt="Unity"></li>
                 <li><img src="assets/unreal.png" alt="Unreal"></li>
+                <li><img src="assets/rider.png" alt="Rider"></li>
             </ul>
         </section>
 
         <section id="projects" class="projects">
             <br>
             <h2>Discover all of my projects</h2>
-
             <section class="project-grid">
                 <div class="project">
                     <img src="assets/placeholder.png" alt="Astral Shooter">
