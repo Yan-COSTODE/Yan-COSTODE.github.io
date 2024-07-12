@@ -1,10 +1,19 @@
+//Burger Nav
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.burger');
     const navLinks = document.querySelector('nav ul');
+    const menuItems = document.querySelectorAll("header nav ul li a");
 
     burger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
         burger.classList.toggle('active');
+    });
+
+    menuItems.forEach(item => {
+        item.addEventListener("click", function() {
+            navLinks.classList.remove('active');
+            burger.classList.remove("active");
+        });
     });
 });
 

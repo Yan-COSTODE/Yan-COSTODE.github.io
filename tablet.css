@@ -9,3 +9,7 @@
 .about p {
     width: 30rem;
 }
+
+header nav ul li a span:hover {
+    transform: none;
+}
