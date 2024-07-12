@@ -1,5 +1,44 @@
+header nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 1;
+    padding-bottom: 1em;
+    box-shadow: 0 4px 8px rgba(22, 22, 22, 0.1);
+}
+
+header nav ul.active {
+    display: flex;
+}
+
+.template {
+    display: none;
+}
+
+.burger {
+    display: block;
+}
+
+.burger.active .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.active .line2 {
+    opacity: 0;
+}
+
+.burger.active .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .welcome p {
-    width: 20rem;
+    width: 80%;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
 }
 
 .image {
@@ -15,5 +54,7 @@
 }
 
 .about p {
-    width: 20rem;
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
