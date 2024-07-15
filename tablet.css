@@ -13,3 +13,7 @@
 header nav ul li a span:hover {
     transform: none;
 }
+
+.projects {
+    background: linear-gradient(to bottom, var(--light-gray) 45%, var(--dark-gray) 0%);
+}

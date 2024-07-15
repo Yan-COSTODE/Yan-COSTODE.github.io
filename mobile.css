@@ -50,7 +50,7 @@ header nav ul.active {
 }
 
 .projects {
-    background: linear-gradient(to bottom, var(--light-gray) 50%, var(--dark-gray) 50%);
+    background: linear-gradient(to bottom, var(--light-gray) 35%, var(--dark-gray) 0%);
 }
 
 .about p {
