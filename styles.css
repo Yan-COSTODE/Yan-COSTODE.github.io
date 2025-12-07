@@ -188,7 +188,7 @@ p {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
     justify-items: center;
 }
@@ -287,6 +287,23 @@ p {
     line-height: 1.875rem;
 }
 
+.about ul {
+    margin: 0 3em 0 0;
+    list-style: none;
+    text-align: center;
+}
+
+.about ul li {
+    display: inline;
+    margin: 0 5em;
+}
+
+.about ul li img {
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+
 footer {
     bottom: 0;
     background: var(--black);
@@ -296,4 +313,10 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+/* https://codepen.io/sosuke/pen/Pjoqqp */
+
+.Itch {
+	filter: invert(48%) sepia(64%) saturate(2697%) hue-rotate(327deg) brightness(105%) contrast(97%);
 }
